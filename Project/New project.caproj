@@ -13,6 +13,8 @@
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
@@ -193,10 +195,6 @@
         </object-type>
         <object-type name="Bacteria" sid="542292531207194">
             <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="action" sid="7993300528797931" type="string" />
-                <instance-variable name="position" sid="5297572692212526" type="number" />
-            </instance-variables>
             <behaviors>
                 <behavior-type name="Bullet" sid="3100075142768406">
                     <behavior id="Bullet" />
@@ -246,6 +244,72 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.504951" original-source="C:\Users\bhard_000\Desktop\Med-Run\PICTURES\explode.png" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Score" sid="3362805022770227">
+            <plugin id="TextBox" />
+            <instance-variables>
+                <instance-variable name="Score" sid="2641572936735403" type="number" />
+            </instance-variables>
+        </object-type>
+        <object-type name="CivilianOne" sid="9187123475277423">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="6916593429521268">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="8271586242685342">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="5214717019947635" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\bhard_000\Desktop\Med-Run\PICTURES\SPRITE\CIVILIANS\africanidle.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\bhard_000\Desktop\Med-Run\PICTURES\SPRITE\CIVILIANS\africanwalk1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\bhard_000\Desktop\Med-Run\PICTURES\SPRITE\CIVILIANS\africanwalk2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CivilianTwo" sid="7502281770060274">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="8733894774978153">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="4561114432096196">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="7294969891481806" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\bhard_000\Desktop\Med-Run\PICTURES\SPRITE\CIVILIANS\asianidle.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\bhard_000\Desktop\Med-Run\PICTURES\SPRITE\CIVILIANS\asianwalk1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\bhard_000\Desktop\Med-Run\PICTURES\SPRITE\CIVILIANS\asianwalk2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CivilianThree" sid="2840467023461659">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="8775853661772143">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="5912323927933291">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="2159594212134315" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\bhard_000\Desktop\Med-Run\PICTURES\SPRITE\CIVILIANS\whiteidle.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\bhard_000\Desktop\Med-Run\PICTURES\SPRITE\CIVILIANS\whitewalk1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\bhard_000\Desktop\Med-Run\PICTURES\SPRITE\CIVILIANS\whitewalk2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ScoreDisplay" sid="4790217394934122">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LivesDisplay" sid="9050771646938305">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />

@@ -3,6 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="Score" sid="6829331828029086" static="0" type="number">0</variable>
+        <variable constant="0" name="Direction" sid="7046404380330162" static="0" type="number">0</variable>
+        <variable comment="Pick a civilian... any civilian!" constant="0" name="Civilian" sid="1425259029499946" static="0" type="number">0</variable>
         <event-block sid="4505009876771851">
             <conditions>
                 <condition id="-1" name="Every tick" sid="25728991172808" type="System" />
@@ -11,6 +14,12 @@
                 <action id="-4" name="Set position to another object" sid="4723242569660409" type="Player">
                     <param id="0" name="Object">PlayerBox</param>
                     <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="0" name="Set text" sid="9702901345253416" type="ScoreDisplay">
+                    <param id="0" name="Text">&quot;Score: &quot; &amp; Score</param>
+                </action>
+                <action id="0" name="Set text" sid="3134625282188151" type="LivesDisplay">
+                    <param id="0" name="Text">&quot;Lives: &quot; &amp; Player.lives</param>
                 </action>
             </actions>
         </event-block>
@@ -252,6 +261,9 @@
                     <param id="2" name="X">126</param>
                     <param id="3" name="Y">38</param>
                 </action>
+                <action id="5" name="Set frame" sid="7527602380566366" type="Bacteria">
+                    <param id="0" name="Frame number">random(3)</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="5318729676980457">
@@ -276,6 +288,9 @@
                             <param id="2" name="X">2045</param>
                             <param id="3" name="Y">138</param>
                         </action>
+                        <action id="5" name="Set frame" sid="3713282367307561" type="Bacteria">
+                            <param id="0" name="Frame number">random(3)</param>
+                        </action>
                         <action behavior="Bullet" id="3" name="Set angle of motion" sid="6305739991378228" type="Bacteria">
                             <param id="0" name="Angle">180</param>
                         </action>
@@ -294,6 +309,9 @@
                             <param id="1" name="Layer">1</param>
                             <param id="2" name="X">-128</param>
                             <param id="3" name="Y">238</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="9236603094025829" type="Bacteria">
+                            <param id="0" name="Frame number">random(3)</param>
                         </action>
                         <action behavior="Bullet" id="3" name="Set angle of motion" sid="9278971890240973" type="Bacteria">
                             <param id="0" name="Angle">0</param>
@@ -314,6 +332,9 @@
                             <param id="2" name="X">2045</param>
                             <param id="3" name="Y">338</param>
                         </action>
+                        <action id="5" name="Set frame" sid="66957502447781" type="Bacteria">
+                            <param id="0" name="Frame number">random(3)</param>
+                        </action>
                         <action behavior="Bullet" id="3" name="Set angle of motion" sid="9040173165595634" type="Bacteria">
                             <param id="0" name="Angle">180</param>
                         </action>
@@ -332,6 +353,9 @@
                             <param id="1" name="Layer">1</param>
                             <param id="2" name="X">-128</param>
                             <param id="3" name="Y">438</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="3496179717688257" type="Bacteria">
+                            <param id="0" name="Frame number">random(3)</param>
                         </action>
                         <action behavior="Bullet" id="3" name="Set angle of motion" sid="5817050200829154" type="Bacteria">
                             <param id="0" name="Angle">0</param>
@@ -352,6 +376,9 @@
                             <param id="2" name="X">2045</param>
                             <param id="3" name="Y">538</param>
                         </action>
+                        <action id="5" name="Set frame" sid="9673038122534008" type="Bacteria">
+                            <param id="0" name="Frame number">random(3)</param>
+                        </action>
                         <action behavior="Bullet" id="3" name="Set angle of motion" sid="51430862464777" type="Bacteria">
                             <param id="0" name="Angle">0</param>
                         </action>
@@ -370,6 +397,9 @@
                             <param id="1" name="Layer">1</param>
                             <param id="2" name="X">-128</param>
                             <param id="3" name="Y">638</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="849096907394538" type="Bacteria">
+                            <param id="0" name="Frame number">random(3)</param>
                         </action>
                         <action behavior="Bullet" id="3" name="Set angle of motion" sid="7823315752119772" type="Bacteria">
                             <param id="0" name="Angle">0</param>
@@ -390,6 +420,9 @@
                             <param id="2" name="X">2045</param>
                             <param id="3" name="Y">738</param>
                         </action>
+                        <action id="5" name="Set frame" sid="4591233948174894" type="Bacteria">
+                            <param id="0" name="Frame number">random(3)</param>
+                        </action>
                         <action behavior="Bullet" id="3" name="Set angle of motion" sid="9384334323051024" type="Bacteria">
                             <param id="0" name="Angle">0</param>
                         </action>
@@ -408,6 +441,9 @@
                             <param id="1" name="Layer">1</param>
                             <param id="2" name="X">-128</param>
                             <param id="3" name="Y">838</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="2271017891751179" type="Bacteria">
+                            <param id="0" name="Frame number">random(3)</param>
                         </action>
                         <action behavior="Bullet" id="3" name="Set angle of motion" sid="2928843077364556" type="Bacteria">
                             <param id="0" name="Angle">0</param>
@@ -431,6 +467,10 @@
                 </action>
                 <action id="-9" name="Destroy" sid="7745179520014399" type="MedKit" />
                 <action id="-9" name="Destroy" sid="3082837025474756" type="Bacteria" />
+                <action id="-11" name="Add to" sid="1384840913584643" type="Score">
+                    <param id="0" name="Instance variable">Score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="2194682054680817">
@@ -479,6 +519,249 @@
                     <param id="2" name="Duration">1.0</param>
                 </action>
                 <action id="-9" name="Destroy" sid="1534539908522989" type="Germ" />
+            </actions>
+        </event-block>
+        <event-block sid="3641360833411307">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="3869195008431689" type="System">
+                    <param id="0" name="Interval (seconds)">10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="3126241605759924" type="System">
+                    <param id="0" name="Object to create">CivilianOne</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">89</param>
+                    <param id="3" name="Y">924</param>
+                </action>
+                <action id="-3" name="Create object" sid="1060304046625001" type="System">
+                    <param id="0" name="Object to create">CivilianTwo</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">1682</param>
+                    <param id="3" name="Y">915</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="4176128004097034" type="CivilianTwo">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-3" name="Create object" sid="4513587517141694" type="System">
+                    <param id="0" name="Object to create">CivilianThree</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">1802</param>
+                    <param id="3" name="Y">915</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="5361453358699318" type="CivilianThree">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1248969252711384">
+            <conditions>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="2890501038374626" type="CivilianOne" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="1709967302196559" type="CivilianOne">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4223466687512507">
+            <conditions>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="1606883249552168" type="CivilianTwo" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="3337190567447388" type="CivilianTwo">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3353190615832986">
+            <conditions>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="9140594542648051" type="CivilianThree" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="4698081688366107" type="CivilianThree">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4754215411070522">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1189175069047231" type="Germ">
+                    <param id="0" name="Object">CivilianOne</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="1" name="Set max speed" sid="3607813383006697" type="CivilianOne">
+                    <param id="0" name="Max Speed">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="6103765032833212" type="Germ" />
+            </actions>
+        </event-block>
+        <event-block sid="8803010960950156">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9405293421709836" type="Germ">
+                    <param id="0" name="Object">CivilianTwo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="1" name="Set max speed" sid="335424291033482" type="CivilianTwo">
+                    <param id="0" name="Max Speed">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="9476301460921524" type="Germ" />
+            </actions>
+        </event-block>
+        <event-block sid="6439131820872604">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6822784055903517" type="Germ">
+                    <param id="0" name="Object">CivilianThree</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="1" name="Set max speed" sid="5831590031731899" type="CivilianThree">
+                    <param id="0" name="Max Speed">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="1743044332733823" type="Germ" />
+            </actions>
+        </event-block>
+        <event-block sid="8375590396167821">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1141890275730932" type="MedKit">
+                    <param id="0" name="Object">CivilianOne</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="1" name="Set max speed" sid="3861012188215623" type="CivilianOne">
+                    <param id="0" name="Max Speed">330</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="1165965111581632">
+                    <conditions>
+                        <condition behavior="Platform" id="1" name="Compare speed" sid="186861735981426" type="CivilianOne">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Speed">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7725159925080393" type="MedKit" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="9771069720698545">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="846081151290879" type="MedKit">
+                    <param id="0" name="Object">CivilianTwo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="1" name="Set max speed" sid="631595015795019" type="CivilianTwo">
+                    <param id="0" name="Max Speed">330</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="7898307551283856">
+                    <conditions>
+                        <condition behavior="Platform" id="1" name="Compare speed" sid="6529058585109759" type="CivilianTwo">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Speed">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="8248448325879849" type="MedKit" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="1649651645082595">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7941497737598193" type="MedKit">
+                    <param id="0" name="Object">CivilianThree</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="1" name="Set max speed" sid="3919938119087242" type="CivilianThree">
+                    <param id="0" name="Max Speed">330</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="6525029889785078">
+                    <conditions>
+                        <condition behavior="Platform" id="1" name="Compare speed" sid="6276176078024586" type="CivilianThree">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Speed">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="8418183634958386" type="MedKit" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="693376835734114">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="793350424226733" type="System">
+                    <param id="0" name="Interval (seconds)">8</param>
+                </condition>
+                <condition behavior="Platform" id="1" name="Compare speed" sid="5780183189232947" type="CivilianOne">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Speed">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="3930809944743879" type="Player">
+                    <param id="0" name="Instance variable">lives</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="4611053785344563" type="Player">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2878111685401013">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="6025595277941451" type="System">
+                    <param id="0" name="Interval (seconds)">8</param>
+                </condition>
+                <condition behavior="Platform" id="1" name="Compare speed" sid="9703745034794301" type="CivilianTwo">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Speed">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="7183221552280385" type="Player">
+                    <param id="0" name="Instance variable">lives</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="416028667308309" type="Player">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6757120806320136">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="2435704221761819" type="System">
+                    <param id="0" name="Interval (seconds)">8</param>
+                </condition>
+                <condition behavior="Platform" id="1" name="Compare speed" sid="7837570924950194" type="CivilianThree">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Speed">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="2437591941815585" type="Player">
+                    <param id="0" name="Instance variable">lives</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="1866881815100289" type="Player">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
             </actions>
         </event-block>
     </events>
