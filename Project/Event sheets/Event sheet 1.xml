@@ -2,5 +2,127 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
-    <events />
+    <events>
+        <event-block sid="4505009876771851">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="25728991172808" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="4723242569660409" type="Player">
+                    <param id="0" name="Object">PlayerBox</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6451922955220416">
+            <conditions>
+                <condition id="2" name="Key is down" sid="4792516033175229" type="Keyboard">
+                    <param id="0" name="Key">65 (A)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="6366795650961229" type="Player">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Platform" id="7" name="Simulate control" sid="441242217018152" type="PlayerBox">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5480107712749099">
+            <conditions>
+                <condition id="2" name="Key is down" sid="1040153401261495" type="Keyboard">
+                    <param id="0" name="Key">68 (D)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="5215769303266677" type="Player">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Platform" id="7" name="Simulate control" sid="4648275530176706" type="PlayerBox">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2477185692226468">
+            <conditions>
+                <condition id="2" name="Key is down" sid="6718843810375769" type="Keyboard">
+                    <param id="0" name="Key">87 (W)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="6319845356630988" type="PlayerBox">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2990372289495221">
+            <conditions>
+                <condition behavior="Platform" id="8" name="On moved" sid="1105677304723468" type="PlayerBox" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1258165808501059" type="Player">
+                    <param id="0" name="Animation">&quot;Run&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3007169919099001">
+            <conditions>
+                <condition behavior="Platform" id="7" name="On stopped" sid="1696036498156836" type="PlayerBox" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="615976942347899" type="Player">
+                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6676039496622198">
+            <conditions>
+                <condition behavior="Platform" id="5" name="On jump" sid="1863744726229407" type="PlayerBox" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="3174634925196388" type="Player">
+                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6421381128177109">
+            <conditions>
+                <condition behavior="Platform" id="9" name="On landed" sid="9030248236249442" type="PlayerBox" />
+                <condition behavior="Platform" id="0" name="Is moving" sid="8401853526210446" type="PlayerBox" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="4700719976506935" type="Player">
+                    <param id="0" name="Animation">&quot;Run&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8056509647751509">
+            <conditions>
+                <condition behavior="Platform" id="9" name="On landed" sid="2094735096991692" type="PlayerBox" />
+                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="7375183449839255" type="PlayerBox" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1302408303564471" type="Player">
+                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5904038510600923">
+            <conditions>
+                <condition behavior="Platform" id="4" name="Is falling" sid="8971576775192706" type="PlayerBox" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="8718287169810345" type="Player">
+                    <param id="0" name="Animation">&quot;Fall&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>
