@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>Event sheet 1</name>
+    <name>Game Event sheet</name>
     <events>
         <variable constant="0" name="Score" sid="6829331828029086" static="0" type="number">0</variable>
         <variable constant="0" name="Direction" sid="7046404380330162" static="0" type="number">0</variable>
@@ -251,7 +251,7 @@
         <event-block sid="2993702148654419">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="8942275074337412" type="System">
-                    <param id="0" name="Interval (seconds)">3</param>
+                    <param id="0" name="Interval (seconds)">BacteriaIncomingCounter</param>
                 </condition>
             </conditions>
             <actions>
@@ -467,8 +467,8 @@
                 </action>
                 <action id="-9" name="Destroy" sid="7745179520014399" type="MedKit" />
                 <action id="-9" name="Destroy" sid="3082837025474756" type="Bacteria" />
-                <action id="-11" name="Add to" sid="1384840913584643" type="Score">
-                    <param id="0" name="Instance variable">Score</param>
+                <action id="-10" name="Add to" sid="1268795175417946" type="System">
+                    <param id="0" name="Variable">Score</param>
                     <param id="1" name="Value">1</param>
                 </action>
             </actions>
@@ -500,6 +500,9 @@
             </conditions>
             <actions>
                 <action behavior="Fade" id="1" name="Start fade" sid="5957843022734372" type="Player" />
+                <action id="-2" name="Go to layout" sid="6897412374135741" type="System">
+                    <param id="0" name="Layout">Game Over</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="222363631213807">

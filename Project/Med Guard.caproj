@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
-    <name>New project</name>
+    <name>Med Guard</name>
     <description></description>
     <version>1.0.0.0</version>
     <author></author>
@@ -16,6 +16,7 @@
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -311,19 +312,109 @@
         <object-type name="LivesDisplay" sid="9050771646938305">
             <plugin id="Text" />
         </object-type>
+        <object-type name="TiledBackground2" sid="1915041095096171">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\bhard_000\Desktop\Med-Run\PICTURES\MENUS\menu.png" />
+        </object-type>
+        <object-type name="TiledBackground3" sid="2459069143089407">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\bhard_000\Desktop\Med-Run\PICTURES\MENUS\menu changing.png" />
+        </object-type>
+        <object-type name="LivesDecision" sid="4487420341914216">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="BacteriaIncoming" sid="644184120633388">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Touch" sid="2174828422040986">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="StartGame" sid="2263567932847752">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5612285506279682" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="OptionPane" sid="8873759150337936">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6736644446954069" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LivesUp" sid="8607447978962815">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4402882372334656" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LivesDown" sid="6440316493083853">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7176957148019204" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpeedUp" sid="3512972380546048">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="976515590907284" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpeedDown" sid="5788647688066825">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6692957007376972" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MenuBack" sid="4689412270976018">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7110468484798982" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground4" sid="6088203074980196">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\bhard_000\Desktop\Med-Run\PICTURES\MENUS\gameover.png" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout-folder name="Levels">
-            <layout>Level 1.xml</layout>
+            <layout>Game.xml</layout>
+        </layout-folder>
+        <layout-folder name="Menus">
+            <layout>Main Menu.xml</layout>
+            <layout>Options Pane.xml</layout>
+            <layout>Game Over.xml</layout>
         </layout-folder>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Game Event sheet.xml</event-sheet>
+        <event-sheet>Main Menu Event sheet.xml</event-sheet>
+        <event-sheet>Options Pane Event sheet.xml</event-sheet>
+        <event-sheet>Game Over Event sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="3" />
         <global-instance type="Mouse" uid="4" />
+        <global-instance type="Touch" uid="23">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder />
     <music-folder />

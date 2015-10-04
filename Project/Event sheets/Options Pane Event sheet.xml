@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Options Pane Event sheet</name>
+    <events>
+        <variable constant="0" name="BacteriaIncomingCounter" sid="4913409400838123" static="0" type="number">3</variable>
+        <event-block sid="4229905154920047">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="143214601924875" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="2766273482426752" type="LivesDecision">
+                    <param id="0" name="Text">&quot;3&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="69725209447407" type="BacteriaIncoming">
+                    <param id="0" name="Text">BacteriaIncomingCounter &amp; &quot; sec&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="932806932402239">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="8084377925145837" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">LivesUp</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Add to" sid="7654489978751362" type="Player">
+                    <param id="0" name="Instance variable">lives</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7799271532277221">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="5178843841093988" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">LivesDown</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="8413437357980723" type="Player">
+                    <param id="0" name="Instance variable">lives</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9024670106109569">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="5309018976450677" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">SpeedUp</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="6991093974229703" type="System">
+                    <param id="0" name="Variable">BacteriaIncomingCounter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1625099253248694">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="5333599489842892" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">SpeedDown</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="7963464519094218" type="System">
+                    <param id="0" name="Variable">BacteriaIncomingCounter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7500051621559386">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="6932960609769076" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">MenuBack</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="9579644031587558" type="System">
+                    <param id="0" name="Layout">Main Menu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
