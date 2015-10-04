@@ -105,6 +105,9 @@
             <conditions>
                 <condition behavior="Platform" id="9" name="On landed" sid="2094735096991692" type="PlayerBox" />
                 <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="7375183449839255" type="PlayerBox" />
+                <condition id="2" inverted="1" name="Mouse button is down" sid="1770603789378431" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="1302408303564471" type="Player">
@@ -120,6 +123,118 @@
             <actions>
                 <action id="4" name="Set animation" sid="8718287169810345" type="Player">
                     <param id="0" name="Animation">&quot;Fall&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7797941974974185">
+            <conditions>
+                <condition id="0" name="On click" sid="5172437912647198" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="2012448517931666" type="PlayerBox" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="9412817236323354" type="Player">
+                    <param id="0" name="Animation">&quot;Throw&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="2355895293339138" type="Player">
+                    <param id="0" name="Object">MedKit</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="7440502076660883" type="MedKit">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8109067800885865">
+            <conditions>
+                <condition id="0" name="On click" sid="4069742984846186" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+                <condition behavior="Platform" id="0" name="Is moving" sid="4621218152900945" type="PlayerBox" />
+                <condition behavior="Platform" id="4" inverted="1" name="Is falling" sid="2599283564523063" type="PlayerBox" />
+                <condition behavior="Platform" id="3" inverted="1" name="Is jumping" sid="7031790868892824" type="PlayerBox" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6648614442054767" type="Player">
+                    <param id="0" name="Animation">&quot;Run&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="1938352457031872" type="Player">
+                    <param id="0" name="Object">MedKit</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="746856333009661" type="MedKit">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5294456467371512">
+            <conditions>
+                <condition id="0" name="On click" sid="7989150596313638" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+                <condition behavior="Platform" id="3" name="Is jumping" sid="2335578190772317" type="PlayerBox" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6457545481539263" type="Player">
+                    <param id="0" name="Animation">&quot;Throw&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="6056174979117359" type="Player">
+                    <param id="0" name="Object">MedKit</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="5571348048116018" type="MedKit">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5431646270205644">
+            <conditions>
+                <condition id="0" name="On click" sid="1037786801174047" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+                <condition behavior="Platform" id="4" name="Is falling" sid="5222163370062806" type="PlayerBox" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1879555621257469" type="Player">
+                    <param id="0" name="Animation">&quot;Throw&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="4908542326662189" type="Player">
+                    <param id="0" name="Object">MedKit</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="7774752909057709" type="MedKit">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7304496468541909">
+            <conditions>
+                <condition id="4" name="On finished" sid="5869533387107989" type="Player">
+                    <param id="0" name="Animation">&quot;Throw&quot;</param>
+                </condition>
+                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="6797764298598083" type="PlayerBox" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="8684513130103702" type="Player">
+                    <param id="0" name="Animation">&quot;Idle&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
