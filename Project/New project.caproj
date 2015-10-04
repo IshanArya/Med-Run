@@ -60,15 +60,33 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\bhard_000\Desktop\Med-Run\PICTURES\SPRITE\Player\IDLE\doctoridle.png" />
                 </animation>
                 <animation framecount="3" loop="1" name="Run" pingpong="0" repeatcount="1" repeatto="0" sid="8252875238222817" speed="9">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\MOHINI\Documents\GitHub\Med-Run\PICTURES\SPRITE\Player\WALK\doctorwalk1.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\MOHINI\Documents\GitHub\Med-Run\PICTURES\SPRITE\Player\WALK\doctorwalk2.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\MOHINI\Documents\GitHub\Med-Run\PICTURES\SPRITE\Player\WALK\doctorwalk3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\MOHINI\Documents\GitHub\Med-Run\PICTURES\SPRITE\Player\WALK\doctorwalk1.png">
+                        <image-point name="Throw Point" x="0.50463" y="0.758929" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\MOHINI\Documents\GitHub\Med-Run\PICTURES\SPRITE\Player\WALK\doctorwalk2.png">
+                        <image-point name="Throw Point" x="0.50463" y="0.759146" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\MOHINI\Documents\GitHub\Med-Run\PICTURES\SPRITE\Player\WALK\doctorwalk3.png">
+                        <image-point name="Throw Point" x="0.50463" y="0.759146" />
+                    </frame>
                 </animation>
                 <animation framecount="1" loop="1" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="9438224343332509" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\bhard_000\Desktop\Med-Run\PICTURES\SPRITE\Player\JUMP\doctorjump1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\bhard_000\Desktop\Med-Run\PICTURES\SPRITE\Player\JUMP\doctorjump1.png">
+                        <image-point name="Throw Point" x="0.923077" y="0.625" />
+                    </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="Fall" pingpong="0" repeatcount="1" repeatto="0" sid="8253357907893108" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\bhard_000\Desktop\Med-Run\PICTURES\SPRITE\Player\JUMP\fall.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\bhard_000\Desktop\Med-Run\PICTURES\SPRITE\Player\JUMP\fall.png">
+                        <image-point name="Throw Point" x="0.0817308" y="0.621951" />
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="Throw" pingpong="0" repeatcount="1" repeatto="0" sid="8944040938515894" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\bhard_000\Desktop\Med-Run\PICTURES\SPRITE\Player\THROW\throw1.png">
+                        <image-point name="Throw Point" x="0.923077" y="0.628834" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\bhard_000\Desktop\Med-Run\PICTURES\SPRITE\Player\THROW\throw2.png">
+                        <image-point name="Imagepoint 1" x="0.923077" y="0.628834" />
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -107,7 +125,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="7385867022100559">
+        <object-type name="Germ" sid="7385867022100559">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Bullet" sid="4240393354965163">
@@ -134,7 +152,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite2" sid="2890451952477404">
+        <object-type name="MedKit" sid="2890451952477404">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Bullet" sid="2808767988103422">
