@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>Med Guard</name>
-    <description></description>
+    <description>MedGuard - Doctors Against Bacteria</description>
     <version>1.0.0.0</version>
     <author></author>
     <author-email></author-email>
@@ -37,6 +37,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>Main Menu</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
