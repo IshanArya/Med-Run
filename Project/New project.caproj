@@ -17,6 +17,8 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
@@ -55,6 +57,17 @@
         </object-type>
         <object-type name="Player" sid="9472063537445721">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="lives" sid="1732101976148962" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Flash" sid="1243547076149786">
+                    <behavior id="Flash" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="3656074920816743">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="5181381877376352" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\bhard_000\Desktop\Med-Run\PICTURES\SPRITE\Player\IDLE\doctoridle.png" />
@@ -175,6 +188,62 @@
                             <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bacteria" sid="542292531207194">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="action" sid="7993300528797931" type="string" />
+                <instance-variable name="position" sid="5297572692212526" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="3100075142768406">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1742767011338618" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\bhard_000\Desktop\Med-Run\PICTURES\SPRITE\ENEMY\BACTERIA\bacteriaufolevel1.png">
+                        <collision-poly>
+                            <point x="0.145161" y="0.5" />
+                            <point x="0.5" y="0" />
+                            <point x="0.854839" y="0.5" />
+                            <point x="0.887097" y="0.5" />
+                            <point x="0.951613" y="0.833333" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0483871" y="0.833333" />
+                            <point x="0.112903" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\bhard_000\Desktop\Med-Run\PICTURES\SPRITE\ENEMY\BACTERIA\bacteriaufolevel2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\bhard_000\Desktop\Med-Run\PICTURES\SPRITE\ENEMY\BACTERIA\bacteriaufolevel3.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Wall" sid="5922652919369012">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="3822567466071047">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4504389518308573" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0.513514" original-source="C:\Users\bhard_000\Desktop\Med-Run\PICTURES\platform.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Explosion" sid="1603650274478428">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="5222409818819767">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4515479743234395" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504951" original-source="C:\Users\bhard_000\Desktop\Med-Run\PICTURES\explode.png" />
                 </animation>
             </animation-folder>
         </object-type>

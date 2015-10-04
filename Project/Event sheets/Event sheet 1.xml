@@ -239,5 +239,247 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="2993702148654419">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="8942275074337412" type="System">
+                    <param id="0" name="Interval (seconds)">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="8190655365024117" type="System">
+                    <param id="0" name="Object to create">Bacteria</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">126</param>
+                    <param id="3" name="Y">38</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5318729676980457">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="8036183640944118" type="Bacteria" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="7862765377829533" type="Bacteria" />
+            </actions>
+            <sub-events>
+                <event-block sid="5426376405861059">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="4173509565398944" type="Bacteria">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Y co-ordinate">38</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="7795213233224625" type="System">
+                            <param id="0" name="Object to create">Bacteria</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">2045</param>
+                            <param id="3" name="Y">138</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="6305739991378228" type="Bacteria">
+                            <param id="0" name="Angle">180</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2173456798305541">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="6174366513011222" type="Bacteria">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Y co-ordinate">138</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="4570178542496906" type="System">
+                            <param id="0" name="Object to create">Bacteria</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">-128</param>
+                            <param id="3" name="Y">238</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="9278971890240973" type="Bacteria">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9465425263712369">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="7365614250864101" type="Bacteria">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Y co-ordinate">238</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="2705880772319202" type="System">
+                            <param id="0" name="Object to create">Bacteria</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">2045</param>
+                            <param id="3" name="Y">338</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="9040173165595634" type="Bacteria">
+                            <param id="0" name="Angle">180</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7410737477330211">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="8387910137168993" type="Bacteria">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Y co-ordinate">338</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="3486843981695214" type="System">
+                            <param id="0" name="Object to create">Bacteria</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">-128</param>
+                            <param id="3" name="Y">438</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="5817050200829154" type="Bacteria">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3679572241622315">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="4654311864004341" type="Bacteria">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Y co-ordinate">438</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="8280474793681445" type="System">
+                            <param id="0" name="Object to create">Bacteria</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">2045</param>
+                            <param id="3" name="Y">538</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="51430862464777" type="Bacteria">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7126418046301894">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="2560158530577687" type="Bacteria">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Y co-ordinate">538</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="3588916463581143" type="System">
+                            <param id="0" name="Object to create">Bacteria</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">-128</param>
+                            <param id="3" name="Y">638</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="7823315752119772" type="Bacteria">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5024384367847353">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="3201466943898048" type="Bacteria">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Y co-ordinate">638</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="6368589526672286" type="System">
+                            <param id="0" name="Object to create">Bacteria</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">2045</param>
+                            <param id="3" name="Y">738</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="9384334323051024" type="Bacteria">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1344563645076211">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="4815119581839747" type="Bacteria">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Y co-ordinate">738</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="6213736924376862" type="System">
+                            <param id="0" name="Object to create">Bacteria</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">-128</param>
+                            <param id="3" name="Y">838</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="2928843077364556" type="Bacteria">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="7022162545390524" type="Player" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="9948169842641867">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5986534328646674" type="MedKit">
+                    <param id="0" name="Object">Bacteria</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="4522233698266856" type="MedKit">
+                    <param id="0" name="Object">Explosion</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="7745179520014399" type="MedKit" />
+                <action id="-9" name="Destroy" sid="3082837025474756" type="Bacteria" />
+            </actions>
+        </event-block>
+        <event-block sid="2194682054680817">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="6067019634275051" type="System">
+                    <param id="0" name="Interval (seconds)">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="8069955583860441" type="Bacteria">
+                    <param id="0" name="Object">Germ</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="5852109716208783" type="Germ">
+                    <param id="0" name="Angle">90</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4861464652931979">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="9602440972116741" type="Player">
+                    <param id="0" name="Instance variable">lives</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="1" name="Start fade" sid="5957843022734372" type="Player" />
+            </actions>
+        </event-block>
+        <event-block sid="222363631213807">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1139885505237874" type="Germ">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="334767411710689" type="Player">
+                    <param id="0" name="Instance variable">lives</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="6395282959579082" type="Player">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="1534539908522989" type="Germ" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
